@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginVertical="2.5dp"
+    app:cardCornerRadius="2dp"
+    app:strokeWidth="0.5dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:paddingHorizontal="10dp"
+            android:id="@+id/tv_name"
+            android:textColor="@color/black"
+            android:text="Name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:paddingHorizontal="10dp"
+            android:id="@+id/tv_choose"
+            android:textColor="@color/gray_1"
+            android:text="Choose 1"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="3"
+            android:overScrollMode="never"
+            android:id="@+id/rv"
+            tools:listitem="@layout/option_item_rv_1"
+            android:orientation="vertical"/>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

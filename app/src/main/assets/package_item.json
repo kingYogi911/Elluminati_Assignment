@@ -1,0 +1,125 @@
+{
+  "_id":"621da725abb8a52242c181cc",
+  "name":[ "Make your own Package" ],
+  "price":0,
+  "item_taxes":[ 5, 12 ],
+  "specifications":	[
+    {
+      "_id":"621da754abb8a52242c181d8",
+      "name":[ "Apartment Size" ],
+      "sequence_number":0,
+      "unique_id":1613,
+      "type":1,
+      "range":1,
+      "max_range":0,
+      "is_required":true,
+      "isParentAssociate":true,
+      "list":	[
+        {
+          "_id":"621da764abb8a52242c181e5",
+          "name":[ "1 BHK" ],
+          "price":999,
+          "sequence_number":0,
+          "is_default_selected":true,
+          "specification_group_id":"621da754abb8a52242c181d8",
+          "unique_id":6749
+        },
+        {
+          "_id":"621da770abb8a52242c181ed",
+          "name":[ "2 BHK" ],
+          "price":1999,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da754abb8a52242c181d8",
+          "unique_id":6750
+        }
+      ]
+    },
+    {
+      "_id":"621da898abb8a52242c1830f",
+      "name":[ "Bedroom Cleaning" ],
+      "sequence_number":0,
+      "unique_id":1617,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da764abb8a52242c181e5",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa58abb8a52242c1838d",
+          "name":[ "I don’t want any bedroom cleaning" ],
+          "price":0,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a0",
+          "name":[ "With Mattress Dry Vacuuming (No. of Bedrooms)" ],
+          "price":149,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa8babb8a52242c183a9",
+          "name":[ "With Mattress Wet Shampooing (No. of Bedrooms)" ],
+          "price":249,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f",
+          "unique_id":6764
+        }
+      ]
+    },
+    {
+      "_id":"621da898abb8a52242c1830f",
+      "name":[ "Bedroom Cleaning" ],
+      "sequence_number":0,
+      "unique_id":1617,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da770abb8a52242c181ed",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa58abb8a52242c1838d",
+          "name":[ "I don’t want any bedroom cleaning" ],
+          "price":0,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a0",
+          "name":[ "With Mattress Dry Vacuuming (No. of Bedrooms)" ],
+          "price":159,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa8babb8a52242c183a9",
+          "name":[ "With Mattress Wet Shampooing (No. of Bedrooms)" ],
+          "price":259,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f",
+          "unique_id":6764
+        }
+      ]
+    }
+  ]
+}
