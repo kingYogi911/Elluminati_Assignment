@@ -1,13 +1,18 @@
 package com.yogi.elluminatiassignment.pricing
 
+import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.button.MaterialButton
 import com.google.gson.Gson
 import com.yogi.elluminatiassignment.R
 import com.yogi.elluminatiassignment.databinding.ActivityPricingBinding
+import com.yogi.elluminatiassignment.utils.setTextAnimation
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -39,7 +44,8 @@ class PricingActivity : AppCompatActivity() {
             adapter.updateData(it)
         }
         viewModel.totalPrice.observe(this){
-            binding.btAddToCart.text = "Add to Cart - ₹%.2f".format(it)
+            binding.btAddToCart.setTextAnimation("Add to Cart - ₹%.2f".format(it))
         }
+
     }
 }

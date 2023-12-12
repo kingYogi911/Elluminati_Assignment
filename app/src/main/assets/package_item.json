@@ -32,9 +32,37 @@
           "is_default_selected":false,
           "specification_group_id":"621da754abb8a52242c181d8",
           "unique_id":6750
+        },
+        {
+          "_id":"621da770abb8a52242c181ef",
+          "name":[ "3 BHK" ],
+          "price":2999,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da754abb8a52242c181d8",
+          "unique_id":6751
+        },
+        {
+          "_id":"621da770abb8a52242c181e6",
+          "name":[ "4 BHK" ],
+          "price":3999,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da754abb8a52242c181d8",
+          "unique_id":6752
+        },
+        {
+          "_id":"621da770abb8a52242c181e7",
+          "name":[ ">4 BHK" ],
+          "price":4999,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da754abb8a52242c181d8",
+          "unique_id":6753
         }
       ]
     },
+
     {
       "_id":"621da898abb8a52242c1830f",
       "name":[ "Bedroom Cleaning" ],
@@ -118,6 +146,715 @@
           "is_default_selected":false,
           "specification_group_id":"621da898abb8a52242c1830f",
           "unique_id":6764
+        }
+      ]
+    },
+    {
+      "_id":"621da898abb8a52242c1830f",
+      "name":[ "Bedroom Cleaning" ],
+      "sequence_number":0,
+      "unique_id":1617,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da770abb8a52242c181ef",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa58abb8a52242c1838d",
+          "name":[ "I don’t want any bedroom cleaning" ],
+          "price":0,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a0",
+          "name":[ "With Mattress Dry Vacuuming (No. of Bedrooms)" ],
+          "price":169,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa8babb8a52242c183a9",
+          "name":[ "With Mattress Wet Shampooing (No. of Bedrooms)" ],
+          "price":269,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f",
+          "unique_id":6764
+        }
+      ]
+    },
+    {
+      "_id":"621da898abb8a52242c1830f",
+      "name":[ "Bedroom Cleaning" ],
+      "sequence_number":0,
+      "unique_id":1617,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da770abb8a52242c181e6",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa58abb8a52242c1838d",
+          "name":[ "I don’t want any bedroom cleaning" ],
+          "price":0,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a0",
+          "name":[ "With Mattress Dry Vacuuming (No. of Bedrooms)" ],
+          "price":179,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa8babb8a52242c183a9",
+          "name":[ "With Mattress Wet Shampooing (No. of Bedrooms)" ],
+          "price":279,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f",
+          "unique_id":6764
+        }
+      ]
+    },
+    {
+      "_id":"621da898abb8a52242c1830f",
+      "name":[ "Bedroom Cleaning" ],
+      "sequence_number":0,
+      "unique_id":1617,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da770abb8a52242c181e7",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa58abb8a52242c1838d",
+          "name":[ "I don’t want any bedroom cleaning" ],
+          "price":0,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a0",
+          "name":[ "With Mattress Dry Vacuuming (No. of Bedrooms)" ],
+          "price":199,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa8babb8a52242c183a9",
+          "name":[ "With Mattress Wet Shampooing (No. of Bedrooms)" ],
+          "price":299,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f",
+          "unique_id":6764
+        }
+      ]
+    },
+
+    {
+      "_id":"621da898abb8a52242c1830f01",
+      "name":[ "Bathroom Cleaning" ],
+      "sequence_number":1,
+      "unique_id":161701,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da764abb8a52242c181e5",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa58abb8a52242c1838d02",
+          "name":[ "I don’t want any bathroom cleaning" ],
+          "price":0,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f01",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a003",
+          "name":[ "No. of Bathrooms" ],
+          "price":99,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f01",
+          "unique_id":6763
+        }
+      ]
+    },
+    {
+      "_id":"621da898abb8a52242c1830f01",
+      "name":[ "Bathroom Cleaning" ],
+      "sequence_number":1,
+      "unique_id":161701,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da770abb8a52242c181ed",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa58abb8a52242c1838d02",
+          "name":[ "I don’t want any bathroom cleaning" ],
+          "price":0,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f01",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a003",
+          "name":[ "No. of Bathrooms" ],
+          "price":109,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f01",
+          "unique_id":6763
+        }
+      ]
+    },
+    {
+      "_id":"621da898abb8a52242c1830f01",
+      "name":[ "Bathroom Cleaning" ],
+      "sequence_number":1,
+      "unique_id":161701,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da770abb8a52242c181ef",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa58abb8a52242c1838d02",
+          "name":[ "I don’t want any bathroom cleaning" ],
+          "price":0,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f01",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a003",
+          "name":[ "No. of Bathrooms" ],
+          "price":119,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f01",
+          "unique_id":6763
+        }
+      ]
+    },
+
+    {
+      "_id":"621da898abb8a52242c1830f04",
+      "name":[ "Living Room/Dining Room Cleaning" ],
+      "sequence_number":1,
+      "unique_id":161701,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da764abb8a52242c181e5",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa58abb8a52242c1838d04",
+          "name":[ "With Sofa & Carpet Wet Shampooing" ],
+          "price":279,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f04",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a004",
+          "name":[ "With Sofa & Carpet Dry Vacuuming" ],
+          "price":179,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f04",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a104",
+          "name":[ "I don't want any living room/dining room cleaning" ],
+          "price":0,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f04",
+          "unique_id":6763
+        }
+      ]
+    },
+    {
+      "_id":"621da898abb8a52242c1830f04",
+      "name":[ "Living Room/Dining Room Cleaning" ],
+      "sequence_number":1,
+      "unique_id":161701,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da770abb8a52242c181ed",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa58abb8a52242c1838d04",
+          "name":[ "With Sofa & Carpet Wet Shampooing" ],
+          "price":289,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f04",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a004",
+          "name":[ "With Sofa & Carpet Dry Vacuuming" ],
+          "price":189,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f04",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a104",
+          "name":[ "I don't want any living room/dining room cleaning" ],
+          "price":0,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f04",
+          "unique_id":6763
+        }
+      ]
+    },
+    {
+      "_id":"621da898abb8a52242c1830f04",
+      "name":[ "Living Room/Dining Room Cleaning" ],
+      "sequence_number":1,
+      "unique_id":161701,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da770abb8a52242c181ef",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa58abb8a52242c1838d04",
+          "name":[ "With Sofa & Carpet Wet Shampooing" ],
+          "price":299,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f04",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a004",
+          "name":[ "With Sofa & Carpet Dry Vacuuming" ],
+          "price":199,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f04",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a104",
+          "name":[ "I don't want any living room/dining room cleaning" ],
+          "price":0,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f04",
+          "unique_id":6763
+        }
+      ]
+    },
+    {
+      "_id":"621da898abb8a52242c1830f04",
+      "name":[ "Living Room/Dining Room Cleaning" ],
+      "sequence_number":1,
+      "unique_id":161701,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da770abb8a52242c181e6",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa58abb8a52242c1838d04",
+          "name":[ "With Sofa & Carpet Wet Shampooing" ],
+          "price":309,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f04",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a004",
+          "name":[ "With Sofa & Carpet Dry Vacuuming" ],
+          "price":209,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f04",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a104",
+          "name":[ "I don't want any living room/dining room cleaning" ],
+          "price":0,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f04",
+          "unique_id":6763
+        }
+      ]
+    },
+    {
+      "_id":"621da898abb8a52242c1830f04",
+      "name":[ "Living Room/Dining Room Cleaning" ],
+      "sequence_number":1,
+      "unique_id":161701,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da770abb8a52242c181e7",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa58abb8a52242c1838d04",
+          "name":[ "With Sofa & Carpet Wet Shampooing" ],
+          "price":319,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f04",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a004",
+          "name":[ "With Sofa & Carpet Dry Vacuuming" ],
+          "price":219,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f04",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a104",
+          "name":[ "I don't want any living room/dining room cleaning" ],
+          "price":0,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f04",
+          "unique_id":6763
+        }
+      ]
+    },
+
+    {
+      "_id":"621da898abb8a52242c1830f05",
+      "name":[ "Kitchen Cleaning" ],
+      "sequence_number":1,
+      "unique_id":161701,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da764abb8a52242c181e5",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa7cabb8a52242c183a105",
+          "name":[ "I don't want any kitchen cleaning" ],
+          "price":0,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa58abb8a52242c1838d05",
+          "name":[ "With Chimney Deep Cleaning" ],
+          "price":199,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a005",
+          "name":[ "With Chimney, Fridge & Microwave Deep Cleaning" ],
+          "price":299,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a205",
+          "name":[ "With Fridge & Microwave Deep Cleaning" ],
+          "price":249,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6763
+        }
+      ]
+    },
+    {
+      "_id":"621da898abb8a52242c1830f05",
+      "name":[ "Kitchen Cleaning" ],
+      "sequence_number":1,
+      "unique_id":161701,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da770abb8a52242c181ed",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa7cabb8a52242c183a105",
+          "name":[ "I don't want any kitchen cleaning" ],
+          "price":0,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa58abb8a52242c1838d05",
+          "name":[ "With Chimney Deep Cleaning" ],
+          "price":219,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a005",
+          "name":[ "With Chimney, Fridge & Microwave Deep Cleaning" ],
+          "price":319,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a205",
+          "name":[ "With Fridge & Microwave Deep Cleaning" ],
+          "price":259,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6763
+        }
+      ]
+    },
+    {
+      "_id":"621da898abb8a52242c1830f05",
+      "name":[ "Kitchen Cleaning" ],
+      "sequence_number":1,
+      "unique_id":161701,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da770abb8a52242c181ef",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa7cabb8a52242c183a105",
+          "name":[ "I don't want any kitchen cleaning" ],
+          "price":0,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa58abb8a52242c1838d05",
+          "name":[ "With Chimney Deep Cleaning" ],
+          "price":239,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a005",
+          "name":[ "With Chimney, Fridge & Microwave Deep Cleaning" ],
+          "price":339,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a205",
+          "name":[ "With Fridge & Microwave Deep Cleaning" ],
+          "price":289,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6763
+        }
+      ]
+    },
+    {
+      "_id":"621da898abb8a52242c1830f05",
+      "name":[ "Kitchen Cleaning" ],
+      "sequence_number":1,
+      "unique_id":161701,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da770abb8a52242c181e6",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa7cabb8a52242c183a105",
+          "name":[ "I don't want any kitchen cleaning" ],
+          "price":0,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa58abb8a52242c1838d05",
+          "name":[ "With Chimney Deep Cleaning" ],
+          "price":259,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a005",
+          "name":[ "With Chimney, Fridge & Microwave Deep Cleaning" ],
+          "price":359,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a205",
+          "name":[ "With Fridge & Microwave Deep Cleaning" ],
+          "price":299,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6763
+        }
+      ]
+    },
+    {
+      "_id":"621da898abb8a52242c1830f05",
+      "name":[ "Kitchen Cleaning" ],
+      "sequence_number":1,
+      "unique_id":161701,
+      "type":2,
+      "range":0,
+      "max_range":1,
+      "is_required":false,
+      "modifierId":"621da770abb8a52242c181e7",
+      "modifierGroupId":"621da754abb8a52242c181d8",
+      "isAssociated":true,
+      "user_can_add_specification_quantity":true,
+      "list":	[
+        {
+          "_id":"621daa7cabb8a52242c183a105",
+          "name":[ "I don't want any kitchen cleaning" ],
+          "price":0,
+          "sequence_number":0,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa58abb8a52242c1838d05",
+          "name":[ "With Chimney Deep Cleaning" ],
+          "price":269,
+          "sequence_number":1,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6762
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a005",
+          "name":[ "With Chimney, Fridge & Microwave Deep Cleaning" ],
+          "price":369,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6763
+        },
+        {
+          "_id":"621daa7cabb8a52242c183a205",
+          "name":[ "With Fridge & Microwave Deep Cleaning" ],
+          "price":319,
+          "sequence_number":2,
+          "is_default_selected":false,
+          "specification_group_id":"621da898abb8a52242c1830f05",
+          "unique_id":6763
         }
       ]
     }

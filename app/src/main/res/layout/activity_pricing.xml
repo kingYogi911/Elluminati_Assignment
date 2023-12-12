@@ -24,9 +24,9 @@
                 android:layout_height="wrap_content"
                 android:fitsSystemWindows="true"
                 app:collapsedTitleGravity="center"
+                app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
                 app:contentScrim="@color/white"
                 app:expandedTitleTextAppearance="@style/TextAppearance.Material3.HeadlineSmall"
-                app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
                 <LinearLayout
@@ -42,36 +42,88 @@
                         android:layout_height="200dp"
                         android:adjustViewBounds="true"
                         android:minHeight="200dp"
-                        android:translationY="15dp"
-                        android:src="@drawable/img" />
+                        android:src="@drawable/img"
+                        android:translationY="15dp" />
 
                     <View
                         android:layout_width="match_parent"
-                        android:background="@color/white"
-                        android:layout_height="?attr/actionBarSize"/>
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@color/white" />
 
                 </LinearLayout>
+
                 <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
-                    app:titleTextColor="@color/black"
-                    app:title="Make Your Own Package"
+                    app:layout_collapseMode="pin"
                     app:navigationIcon="?attr/homeAsUpIndicator"
-                    app:layout_collapseMode="pin"/>
+                    app:title="Make Your Own Package"
+                    app:titleTextColor="@color/black" />
             </com.google.android.material.appbar.CollapsingToolbarLayout>
         </com.google.android.material.appbar.AppBarLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv"
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_2"
+            android:fillViewport="true"
             android:overScrollMode="never"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            tools:itemCount="2"
-            tools:listitem="@layout/specification_item_rv" />
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:overScrollMode="never"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/specification_item_rv" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="2dp"
+                    app:cardCornerRadius="2dp"
+                    app:strokeColor="@color/gray_2"
+                    app:strokeWidth="0.5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingVertical="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="10dp"
+                            android:text="Note"
+                            android:textColor="@color/gray_1"
+                            android:textSize="15dp" />
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_note"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray_1"
+                            android:hint="Note for Item"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <LinearLayout
@@ -140,9 +192,9 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/bt_add_to_cart"
             android:layout_width="match_parent"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/cyan"
             android:layout_height="wrap_content"
-            android:text="Add to Cart - ₹1999.00" />
+            android:backgroundTint="@color/cyan"
+            android:text="Add to Cart - ₹1999.00"
+            android:textColor="@color/white" />
     </LinearLayout>
 </LinearLayout>
