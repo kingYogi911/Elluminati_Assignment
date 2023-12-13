@@ -1,10 +1,13 @@
 package com.yogi.elluminatiassignment.pricing
 
 import android.annotation.SuppressLint
+import android.text.SpannableStringBuilder
+import android.text.style.ForegroundColorSpan
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.graphics.toColorInt
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.yogi.elluminatiassignment.R
@@ -51,14 +54,26 @@ class SpecificationsAdapter(
 
     override fun getItemCount(): Int = data.size
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val spec = data[position]
         holder.binding.apply {
-            tvName.text = spec.name.first()
+            val name = if (spec.is_required) {
+                SpannableStringBuilder(spec.name.first()+ " *").apply {
+                    setSpan(ForegroundColorSpan("#ff0000".toColorInt()),this.length-2,this.length,SpannableStringBuilder.SPAN_EXCLUSIVE_EXCLUSIVE)
+                }
+            } else {
+                spec.name.first()
+            }
+            tvName.text = name
             tvChoose.text = if (spec.type == 1) "Choose 1" else "Choose up to ${spec.max_range}"
             rv.adapter = if (spec.type == 1) holder.optAdapter1 else holder.optAdapter2
             holder.optAdapter1.setData(spec.list)
-            holder.optAdapter2.setData(spec.list,spec.user_can_add_specification_quantity==true)
+            holder.optAdapter2.setData(
+                spec.list,
+                spec.user_can_add_specification_quantity == true,
+                spec.max_range
+            )
         }
     }
 
@@ -112,9 +127,15 @@ class SpecificationsAdapter(
     ) : RecyclerView.Adapter<OptionsAdapter2.ViewHolder>() {
 
         private val data = mutableListOf<OptionsItem>()
-        private var user_can_add_specification_quantity:Boolean=false
-        fun setData(newData: List<OptionsItem>,user_can_add_specification_quantity:Boolean) {
+        private var user_can_add_specification_quantity: Boolean = false
+        private var rangeMax: Int = 1
+        fun setData(
+            newData: List<OptionsItem>,
+            user_can_add_specification_quantity: Boolean,
+            range_max: Int = 1
+        ) {
             this.user_can_add_specification_quantity = user_can_add_specification_quantity
+            this.rangeMax = range_max
             data.clear()
             data += newData
             notifyDataSetChanged()
@@ -126,7 +147,10 @@ class SpecificationsAdapter(
             init {
                 binding.apply {
                     cb.setOnClickListener {
-                        onItemSelected(data[bindingAdapterPosition], !data[bindingAdapterPosition].isSelected)
+                        onItemSelected(
+                            data[bindingAdapterPosition],
+                            !data[bindingAdapterPosition].isSelected
+                        )
                     }
                     btPlus.setOnClickListener {
                         onClickCount(data[bindingAdapterPosition], true)
@@ -155,12 +179,17 @@ class SpecificationsAdapter(
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             val opt = data[position]
             holder.binding.apply {
+                val selectedCount = data.count { it.isSelected }
                 cb.text = opt.name.first()
                 cb.isChecked = opt.isSelected
-                Log.e("isVisible","user_can_add_specification_quantity:$user_can_add_specification_quantity && opt.isSelected:${opt.isSelected}")
+                cb.isEnabled = selectedCount < rangeMax || opt.isSelected
+                Log.e(
+                    "isVisible",
+                    "user_can_add_specification_quantity:$user_can_add_specification_quantity && opt.isSelected:${opt.isSelected}"
+                )
                 layoutCounts.isVisible = user_can_add_specification_quantity && opt.isSelected
                 tvCount.text = "${opt.quantity}"
-                tvPrice.text = if (opt.price==0) "" else "₹ ${opt.price}.00"
+                tvPrice.text = if (opt.price == 0) "" else "₹ ${opt.price}.00"
             }
         }
     }

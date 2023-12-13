@@ -39,6 +39,12 @@ class PricingActivity : AppCompatActivity() {
             toolbar.setNavigationOnClickListener {
                 this@PricingActivity.finish()
             }
+            btMinus.setOnClickListener {
+                viewModel.decQTY()
+            }
+            btPlus.setOnClickListener {
+                viewModel.incQTY()
+            }
         }
         viewModel.specificationsList.observe(this) {
             adapter.updateData(it)
@@ -46,6 +52,8 @@ class PricingActivity : AppCompatActivity() {
         viewModel.totalPrice.observe(this){
             binding.btAddToCart.setTextAnimation("Add to Cart - ₹%.2f".format(it))
         }
-
+        viewModel.qty.observe(this){
+            binding.tvCount.text = "$it"
+        }
     }
 }

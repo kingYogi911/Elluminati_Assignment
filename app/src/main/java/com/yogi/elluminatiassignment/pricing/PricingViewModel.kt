@@ -28,6 +28,9 @@ class PricingViewModel @Inject constructor(
 
     private val _specificationsList=MutableLiveData(data.specifications)
     private val _filteredList = MutableLiveData(data.specifications)
+
+    private val _qty=MutableLiveData(1)
+    val qty:LiveData<Int> get() = _qty
     val specificationsList:LiveData<List<Specification>> get() = _filteredList
 
     private val _totalPrice=MutableLiveData<Float>(0f)
@@ -122,6 +125,18 @@ class PricingViewModel @Inject constructor(
                 }
             }
         }
-        _totalPrice.value = tPrice
+        _totalPrice.value = tPrice * _qty.value!!
+    }
+
+    fun incQTY(){
+        _qty.value = _qty.value!! + 1
+        refreshTotal()
+    }
+
+    fun decQTY(){
+        if (_qty.value!!>1){
+            _qty.value = _qty.value!! -1
+        }
+        refreshTotal()
     }
 }
